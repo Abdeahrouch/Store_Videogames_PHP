@@ -5,25 +5,22 @@
         </a>
     </div>
     <div>
-        <ul class="nav nav-tabs ">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Tous les jeux</a>
+        <ul class="nav nav-tabs custom-navbar">
+            <li class="nav-item ml-auto">
+                <a class="nav-link active text-white bg-primary" aria-current="page" href="#">Tous les jeux</a>
             </li>
-            <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Par console</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">PS4 </a></li>
-                    <li><a class="dropdown-item" href="#">PS5</a></li>
-                    <li><a class="dropdown-item" href="#">360</a></li>
-                    <li><a class="dropdown-item" href="#">Xir8e box Series</a></li>
-                    <li><a class="dropdown-item" href="#">ONE</a></li>
-                    <li><a class="dropdown-item" href="#">Switch</a></li>
-                    <li><a class="dropdown-item" href="#">PC</a></li>
-
+            <li class="nav-item dropdown">
+                <a class="nav-link active text-white bg-primary" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Par console</a>
+                <ul class="dropdown-menu bg-primary">
+                    <li><a class="dropdown-item text-white" href="#">PS4</a></li>
+                    <li><a class="dropdown-item text-white" href="#">PS5</a></li>
+                    <li><a class="dropdown-item text-white" href="#">360</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Xir8e box Series</a></li>
+                    <li><a class="dropdown-item text-white" href="#">ONE</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Switch</a></li>
+                    <li><a class="dropdown-item text-white" href="#">PC</a></li>
                 </ul>
             </li>
-
         </ul>
     </div>
-
 </div>

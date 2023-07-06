@@ -1,13 +1,20 @@
 
-body{
+body {
+    margin: 0;
+    padding: 0;
     background-image: url("./images/backgroung-image.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: 100% 100%; /* Ajuste la taille de l'image pour couvrir toute la page */
     display: flex;
     justify-content: center;
 }
 
+.custom-navbar {
+    width: 600px; /* Personnalisez la largeur souhaitée */
+    margin-left: 50px; /* Pour aligner la navbar à droite */
+    margin-right: auto; /* Pour aligner la navbar à gauche */
+}
 
 .logo{
     width: 30%;

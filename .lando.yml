@@ -1,4 +1,4 @@
-name: tp-video-games-php
+name: tp-video-games
 recipe: lamp
 config:
   php: "8.2"

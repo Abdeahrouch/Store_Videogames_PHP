@@ -15,3 +15,4 @@ if (!$connection) {
 
 //forcer l'encodage en utf8
 mysqli_set_charset($connection, "utf8");
+?>
