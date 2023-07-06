@@ -1,4 +1,5 @@
 <?php
+require_once './backend/get_games.php';
 //on déclare nos constantes
 define('DB_HOST', 'database');
 define('DB_USER', 'admin');
@@ -15,4 +16,3 @@ if (!$connection) {
 
 //forcer l'encodage en utf8
 mysqli_set_charset($connection, "utf8");
-?>

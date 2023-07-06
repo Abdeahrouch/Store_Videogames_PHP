@@ -12,13 +12,7 @@
             <li class="nav-item dropdown">
                 <a class="nav-link active text-white bg-primary" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Par console</a>
                 <ul class="dropdown-menu bg-primary">
-                    <li><a class="dropdown-item text-white" href="#">PS4</a></li>
-                    <li><a class="dropdown-item text-white" href="#">PS5</a></li>
-                    <li><a class="dropdown-item text-white" href="#">360</a></li>
-                    <li><a class="dropdown-item text-white" href="#">Xir8e box Series</a></li>
-                    <li><a class="dropdown-item text-white" href="#">ONE</a></li>
-                    <li><a class="dropdown-item text-white" href="#">Switch</a></li>
-                    <li><a class="dropdown-item text-white" href="#">PC</a></li>
+                    <?php get_games_by_console() ?>
                 </ul>
             </li>
         </ul>
