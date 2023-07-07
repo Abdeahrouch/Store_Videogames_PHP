@@ -5,13 +5,13 @@
 
 
 <?php require_once './template/header.php' ?>
-<?php require_once './template/navbar.php' ?>
-
-<div class=" principal d-flex flex-wrap justify-content-center gap-4 ">
-
+<?php require_once './template/navbar.php';
+?>
+<?php $game = intval($_GET['console_id']) ?>
+<div class="d-flex flex-wrap justify-content-center gap-4 ">
     <?php
-    get_all_games();
-
+    get_console_games_id($game);
     ?>
 </div>
+
 <?php require_once './template/footer.php' ?>
