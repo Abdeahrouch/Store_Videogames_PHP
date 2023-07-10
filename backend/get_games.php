@@ -211,3 +211,28 @@ function get_games_by_price_desc()
         die("Erreur dans la requête SQL : $query");
     }
 }
+
+
+function get_and_search_all_games() {
+
+    global $connection;
+
+    $searchTerm = isset($_GET['search']) ? $_GET['search'] : '';
+  
+    // Requête SQL pour rechercher les jeux correspondants
+    $query = "SELECT * FROM jeu WHERE titre LIKE '%" . $searchTerm . "%'";
+  
+    // Exécutez la requête et récupérez les jeux correspondants
+   
+//on execute la requete
+if ($result = mysqli_query($connection, $query)) {
+    //on vérifie si on a des résultats
+    if (mysqli_num_rows($result) > 0) {
+        //on parcours les resultats
+        while ($game = mysqli_fetch_assoc($result)) {  
+            //ici le rendu d jouet
+            render_games($game);
+            }
+        }
+    }
+}
