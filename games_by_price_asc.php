@@ -7,11 +7,10 @@
 <?php require_once './template/header.php' ?>
 <?php require_once './template/navbar.php' ?>
 
-
 <div class=" principal d-flex flex-wrap justify-content-center gap-4 ">
 
     <?php
-    get_all_games();
+    get_games_by_price_asc();
 
     ?>
 </div>

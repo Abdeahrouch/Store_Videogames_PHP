@@ -1,9 +1,6 @@
 <?php
 
 
-
-
-
 function render_games($game)
 
 {
@@ -73,4 +70,31 @@ function render_game_detail($game)
         </div>
     </div>
 <?php
+}
+
+
+function render_game_by_price($game)
+{
+    if ($game['prix'] == 0) {
+        // Si mon prix est égale à 0 alors il est gratuit
+        $game['prix'] = "GRATUIT";
+    } else {
+        // Sinon je formate le prix
+        $game['prix'] = number_format($game['prix'] / 100, 2, ',', ' ') . "€";
+    }
+
+?>
+
+    <div class="card m-2" style="width: 15rem;">
+        <img class="card-img-top game_image" src="../images/games/<?php echo $game['image_path'] ?>" alt="image de <?php echo $game['image_path'] ?>">
+        <div class="card-body">
+            <h5 class="card-title game_name"><?php echo $game['titre']; ?></h5>
+            <p class="card-text game_price"><?php echo $game['prix']; ?></p>
+            <a href="../detail.php?game_id=<?php echo $game['id'] ?>" class="btn btn-primary btn-hover btn-sm">Voir détail</a>
+        </div>
+
+    </div>
+
+<?php
+
 }
