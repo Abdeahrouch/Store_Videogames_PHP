@@ -4,8 +4,16 @@
 <?php require_once './template/header.php' ?>
 <?php require_once './template/navbar.php' ?>
 <?php
+?>
 
 
+<!-- Formulaire de recherche -->
+<form method="GET" action="search.php">
+  <input type="text" name="search" placeholder="Rechercher un jeu...">
+  <input type="submit" value="Rechercher">
+</form>
+
+<?php
 
 
 $matchingGames = [];
