@@ -25,7 +25,7 @@ function get_all_games()
         } else {
             // 7 - Si je n'est pas au moins un résultat, rendu HTML pour informer l'utilisateur
 
-            echo "<h1>Il n'y a pas de jouet</h1>";
+            echo "<h1>Il n'y a pas de jeu</h1>";
         }
     } else {
         // 8 - Ici on gère l'erreur si la connexion n'est pas bonne ou la requête est mal écrite
@@ -174,7 +174,7 @@ function get_games_by_price_asc()
         } else {
             // 7 - Si je n'est pas au moins un résultat, rendu HTML pour informer l'utilisateur
 
-            echo "<h1>Il n'y a pas de jouet</h1>";
+            echo "<h1>Il n'y a pas de jeu</h1>";
         }
     } else {
         // 8 - Ici on gère l'erreur si la connexion n'est pas bonne ou la requête est mal écrite
@@ -204,7 +204,7 @@ function get_games_by_price_desc()
         } else {
             // 7 - Si je n'est pas au moins un résultat, rendu HTML pour informer l'utilisateur
 
-            echo "<h1>Il n'y a pas de jouet</h1>";
+            echo "<h1>Il n'y a pas de jeu</h1>";
         }
     } else {
         // 8 - Ici on gère l'erreur si la connexion n'est pas bonne ou la requête est mal écrite
@@ -233,6 +233,11 @@ if ($result = mysqli_query($connection, $query)) {
             //ici le rendu d jouet
             render_games($game);
             }
+        } else {
+            // 7 - Si je n'est pas au moins un résultat, rendu HTML pour informer l'utilisateur
+
+            echo "<h1>Il n'y a pas de jeu correspondant</h1>";
+        }
+            
         }
     }
-}
